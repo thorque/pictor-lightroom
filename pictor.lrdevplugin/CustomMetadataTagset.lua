@@ -28,17 +28,36 @@ return{
 	id = 'CustomMetadataTagset',
 	
 	items = {
+		{'com.adobe.title', topLabel = true},
+		{ 'com.adobe.caption', height_in_lines = 5, allow_newlines = true, topLabel = true},
+
 		{ 'com.adobe.label', label = LOC "$$$/Metadata/OrigLabel=Standard Metadata" },
 		'com.adobe.filename',
 		'com.adobe.copyname',
 		'com.adobe.folder',
+		'com.adobe.combinedImageFileDimensions',
 		
 		'com.adobe.separator',
-		
-		'com.adobe.title',
-		{ 'com.adobe.caption', height_in_lines = 3 },
-		
+		{ 
+			'com.adobe.label', 
+			label = LOC "$$$/Metadata/OrigLabel=Kategorisierung" 
+		},
 		{'com.adobe.category', height_in_lines = 1},
+		{'com.adobe.keywords', height_in_lines = 3},
+		'com.adobe.rating',
+		
+		'com.adobe.separator',
+		{ 
+			'com.adobe.label', 
+			label = LOC "$$$/Metadata/OrigLabel=Exifs" 
+		},
+		'com.adobe.make',
+		'com.adobe.model',
+		'com.adobe.lens',
+		'com.adobe.ISOSpeedRating',
+		'com.adobe.focalLength',
+		'com.adobe.exposure',
+		
 		'com.adobe.separator',
 		{ 
 			'com.adobe.label', 
